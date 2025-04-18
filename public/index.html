@@ -39,15 +39,14 @@
     <button onclick="loadVideo()">Cargar video</button>
 
     <video id="videoPlayer" controls>
-        <source src="http://localhost:8080/video/1" type="video/mp4">
+        <source src="http://34.31.210.175:8080/video/1" type="video/mp4">
         Tu navegador no soporta video HTML5.
     </video>
-
     <script>
         function loadVideo() {
             const id = document.getElementById('videoId').value;
             const video = document.getElementById('videoPlayer');
-            video.src = `http://localhost:8080/video/${id}`;
+            video.src = `http://34.31.210.175:8080/video/${id}`;
             video.load();
             video.play();
         }
